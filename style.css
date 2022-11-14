@@ -49,7 +49,6 @@ blockquote p{margin-left:20px;margin-right:20px;font-size:18px;font-weight:700;l
 
 #pesanWA, #pesanstiker > *, #pesanAwal, #tgeser, #tklik, #tiya, #tmbl2, #linkmp3, #fotoakhir2, #pesanditolak > *, #kalimat2, #kalimatb2, #kalimatc2, #kalimat3, #kalimatb3, #kalimatc3, #kalimatbb{display:none}
 
-.button{display:inline-block;margin:0;padding:1px 110px;background:rgba(0,0,0,0);color:#fff;font-family:arial;letter-spacing:5px;border:0;outline:none;cursor:pointer;border-radius:.4rem;text-decoration:none;box-shadow:0 0 0px #22254C}
 .icon-stt svg{display:none}
 #networkstt.online .icon-stt .connect-icon{display:inline-block}
 #networkstt.offline .icon-stt .disconnect-icon{display:inline-block}
