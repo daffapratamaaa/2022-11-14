@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="/style.css" rel="stylesheet" type="text/css" />
+
+<!--<link href="https://feeldreams.github.io/katanya/style.css" rel="stylesheet" type="text/css" />-->
+
+<head>
+<title>Tidak Ada Pepaya, Tapi Ada Kelapa</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="icon" type="image/x-icon" href="https://lh5.googleusercontent.com/p/AF1QipPLTXg_zAogQkFrp0hS1YOMbNle-C-aLYJTDgyZ=w720-h720-p-k-no">
+<!-- 
+  
+  Made with love by Daffa Pratama!
+  
+     Blog: https://www.daffaa.my.id
+     Instagram: @daffapratamanurardiansyah
+     TikTok: @daffa_pratama_
+     Email: www.daffaa.my.id@gmail.com
+     
+  Thanks to all <3
+  
+-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+:root {
+--warna-bg: rgba(0, 0, 0, .5); 
+--warna-teks: #fff;
+--warna-bingkai: #fff;
+--bingkai: 14px;
+--bingkai-kiri: 2px solid var(--warna-bingkai);
+--bingkai-kanan: 2px solid var(--warna-bingkai);
+--gaya-font: 'Josefin Sans', sans-serif;
+}
+@keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
+body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
+body::before{content:"\00A9  Daffa Pratama Nur Ardiansyah";color:white;opacity:0;font-size:11px;position:fixed;bottom:25px;right:25px;z-index:2}
+#bodyblur{opacity:0;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;} 
+#beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(0px); backdrop-filter:blur(0px);transition:all 3s ease;}
+#wallpaper{width:100%;height:100%;transform: scale(2);transition:all 1s ease;}
+
+@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+@keyframes rts{from {transform:scale(.1);} to {transform:scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+@keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
+@keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);/* transform: rotate(-5deg); */} to {transform: scale(1);/* transform: rotate(5deg); */}}
+@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+
+blockquote{opacity:0;visibility:hidden;transition:all 0s ease;position:relative;margin-top:120px;margin-left:0;margin-right:0;}
+blockquote{width:400px;min-height:50px;border-radius:0;color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;line-height:1.3em;padding:20px;}
+blockquote p{margin-left:20px;margin-right:20px;font-size:18px;font-weight:700;line-height:1.4em;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);transition:all .8s ease;}
+
+#Content img{display:none;background: rgba(255, 255, 255, 0.2);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 8px;padding:10px;height:100px;width:100px;margin:20px 0 10px 0;}
+#fotoakhir{margin-bottom:15px;transition:all .8s ease;transform: scale(.1);}
+
+#Tombol{position:relative;opacity:0;margin:0;display:flex;align-items:left;list-style:none;transform: scale(.1);transition:all 1s ease;}
+#Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border:1px solid var(--warna-bingkai);border-radius:18px;line-height:15px;background:rgba(0,0,0,0);color:var(--warna-teks);font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;z-index:1} 
+
+#Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:1;margin-top:15vh;width:100%;height:180px;transition:all 0s ease;}
+#Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
+
+#suratin img{display:inline-flex;box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;background:rgba(255,255,255, 1);border-radius:10%;padding:10px;width:140px;height:110px;margin:0;transition:all .3s ease;} 
+#ket{margin-top:30px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);font-size:18px;color:white}
+#suratin img:hover{transform:scale(.9);}
+
+.swal2-modal > *{font-size:17px;}
+.swal2-title{line-height:1.3em;font-size:18px;text-align:center;padding:15px 20px 0 20px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#007BFF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;max-width:320px;background:rgba(240,240,240,1);border-radius:8px;top:-80px;}
+
+.fa-heart {opacity:.3;color:white;font-size: 27px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+
+#pesanWA, #pesanstiker > *, #pesanAwal, #tgeser, #tklik, #tiya, #tmbl2, #linkmp3, #fotoakhir2, #pesanditolak > *, #kalimat2, #kalimatb2, #kalimatc2, #kalimat3, #kalimatb3, #kalimatc3, #kalimatbb{display:none}
+
+.button{display:inline-block;margin:0;padding:1px 110px;background:rgba(0,0,0,0);color:#fff;font-family:arial;letter-spacing:5px;border:0;outline:none;cursor:pointer;border-radius:.4rem;text-decoration:none;box-shadow:0 0 0px #22254C}
+.icon-stt svg{display:none}
+#networkstt.online .icon-stt .connect-icon{display:inline-block}
+#networkstt.offline .icon-stt .disconnect-icon{display:inline-block}
+#networkstt #status-text{font-size:14px;color:#666;padding:6px}
+#networkstt .icon-stt{padding:6px}
+#networkstt{display:none;position:fixed;bottom:15px;left:15px;background:#fff;padding:4px 6px;align-items:center;border-radius:.25rem;box-shadow:0 0 20px rgb(95 125 149 / 25%);z-index:9999}
+#networkstt.offline,#networkstt.online{display:flex}
+.refresh-button{font-size:14px;display:none;color:#7577a9;margin:0 5px 0 10px;cursor:pointer}
+#networkstt.offline .refresh-button{display:inline-block}
+</style>
+<body>
+	
+<script language='JavaScript1.2'>
+     function disableselect(e){
+     return false
+     }
+     function reEnable(){
+     return true
+     }
+    document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+     }
+</script>
+
+<div class='clear'></div>
+<div class='widget HTML' data-version='1' id='HTML2'>
+<div class='widget-content'>
+<script> var message="Dilarang Copy Paste!";
+///////////////////////////////////
+function clickIE4(){if (event.button==2){alert(message);return false;}} function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}} if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;} else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;} document.oncontextmenu=new Function("swals.fire('Ups!' , 'Dilarang copy paste, ya!' , 'warning');return false")</script>
+
+<div class='clear'></div></div></div>
+	
+<script>//<![CDATA[
+     window.addEventListener('load', function() {
+     var status = document.getElementById("status-text"),
+     classnw = document.getElementById("networkstt");
+     function updateOnlineStatus(event) {
+     var networkstt = navigator.onLine ? "Kembali online!" : "Tidak ada koneksi internet!";
+     status.innerHTML = networkstt;
+     if (navigator.onLine == true){classnw.className = 'online';setTimeout(function(){classnw.className = ''},3000)}else{classnw.className = 'offline'}
+     }
+  window.addEventListener('online',  updateOnlineStatus);
+  window.addEventListener('offline', updateOnlineStatus);
+     });
+//]]></script>
+	
+   <!-- Ganti Audio di sini --><audio src="https://feeldreams.github.io/akanku/akanku.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/wp6.jpg" id="wallpaper"/>
+   </div>
+
+   <div id='Content'>
+   	
+     <div id="suratin">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Pesannya!</p>
+   
+     <div>
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/peachgaruk.gif" id="fotoakhir"/>
+         <img src="https://feeldreams.github.io/peachhello.gif" id="fotoakhir1"/>
+         <img src="https://feeldreams.github.io/peach22.gif" id="fotoakhir2"/>
+         <img src="https://feeldreams.github.io/peachbunga2.gif" id="fotoakhir3"/>
+         <img src="https://feeldreams.github.io/peach33.gif" id="fotoakhir4"/>
+         <img src="https://feeldreams.github.io/peachlove.gif" id="fotoakhir5"/>
+
+         <img src="https://feeldreams.github.io/peachhoam.gif" id="fotoAkhir"/>
+     </div>
+     <div><blockquote id='bq'>
+  
+       <!-- Konten Penerapan -->
+       <p id="kalimat">Tidak Ada Pepaya,</p>
+       <p id="kalimata">Tapi Ada Kelapa..</p>
+       <p id="kalimatb">Tidak Peduli Seberapa Buruk Tentangnya,</p>
+       <p id="kalimatc">Akan Ku Temani,</p>
+       <p id="kalimatd">Jika Memang Dia Setia 🤭❤️</p>
+
+       <!-- Konten Pertanyaan -->
+       <p id="kalimat2">Dah Ah wkwk 🤣❤️</p>
+
+       <!-- Konten Jawaban -->
+       <p id="kalimat3">Jawabanmu: </p>
+       <p id="kalimatb3">Kirim ke WhatsApp aku ya!</p>
+     </blockquote></div>
+   
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">Lanjut</b>
+         <b id="tmbl2">💌 Balas</b>
+       </a>
+     </div>
+     <div id='networkstt'>
+       <div class='icon-stt'>
+       <svg class='connect-icon' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M0 0h24v24H0z' fill='none'></path><path d='M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z' fill='#2ecc71'></path></svg>
+       <svg class='disconnect-icon' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M24 .01c0-.01 0-.01 0 0L0 0v24h24V.01zM0 0h24v24H0V0zm0 0h24v24H0V0z' fill='none'></path><path d='M22.99 9C19.15 5.16 13.8 3.76 8.84 4.78l2.52 2.52c3.47-.17 6.99 1.05 9.63 3.7l2-2zm-4 4c-1.29-1.29-2.84-2.13-4.49-2.56l3.53 3.53.96-.97zM2 3.05L5.07 6.1C3.6 6.82 2.22 7.78 1 9l1.99 2c1.24-1.24 2.67-2.16 4.2-2.77l2.24 2.24C7.81 10.89 6.27 11.73 5 13v.01L6.99 15c1.36-1.36 3.14-2.04 4.92-2.06L18.98 20l1.27-1.26L3.29 1.79 2 3.05zM9 17l3 3 3-3c-1.65-1.66-4.34-1.66-6 0z'></path></svg>
+     </div>
+       <p aria-atomic='true' id='status-text' role='alert'></p>
+       <div class='refresh-button' role='button' tabindex='0'>
+       <span onclick='location.reload()'>Refresh</span>
+     </div>
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  ftom=0;jikatom=0;ftganti=0;fungsi=0;
+  
+  function mulaikonten() {
+                          setTimeout(fmketik1,4200);setTimeout(mketik1,4200);
+                          setTimeout(fmketik2,5200);setTimeout(mketik2,5200);
+                          setTimeout(fmketik3,6900);setTimeout(mketik3,6900);
+                          setTimeout(fmketik4,8900);setTimeout(mketik4,8900);
+                          setTimeout(fmketik5,10000);setTimeout(mketik5,10000);
+                         }
+  
+  vketik=kalimat.innerHTML;kalimat.innerHTML = "";
+  vketika=kalimata.innerHTML;kalimata.innerHTML = "";
+  vketikb=kalimatb.innerHTML;kalimatb.innerHTML = "";
+  vketikc=kalimatc.innerHTML;kalimatc.innerHTML = "";
+  vketikd=kalimatd.innerHTML;kalimatd.innerHTML = "";
+  
+  var aa=0,vketik;
+  function fmketik1(){
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=1;setTimeout(ftmuncul,200);
+}
+function mketik1() {if(aa<vketik.length){kalimat.innerHTML += vketik.charAt(aa);aa++;setTimeout(mketik1,50);}}
+
+var ab=0,vketika;
+function fmketik2(){
+  wallpaper.style="transform: scale(1);";
+  fthilang();ftganti=2;setTimeout(ftmuncul,200);
+  kalimat.innerHTML="";
+}
+function mketik2() {if(ab<vketika.length){kalimata.innerHTML += vketika.charAt(ab);ab++;setTimeout(mketik2,50);}}
+  
+  var ac=0,vketikb;
+function fmketik3(){
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=3;setTimeout(ftmuncul,200);
+  kalimata.innerHTML="";
+}
+function mketik3() {if(ac<vketikb.length){kalimatb.innerHTML += vketikb.charAt(ac);ac++;setTimeout(mketik3,42);}}
+
+  var ad=0,vketikc;
+function fmketik4(){
+  wallpaper.style="transform: scale(1);";
+  fthilang();ftganti=4;setTimeout(ftmuncul,200);
+  kalimatb.innerHTML="";
+}
+function mketik4() {if(ad<vketikc.length){kalimatc.innerHTML += vketikc.charAt(ad);ad++;setTimeout(mketik4,42);}}
+
+  var ae=0,vketikd;
+function fmketik5(){
+  wallpaper.style="transform: scale(1.5);";
+  fthilang();ftganti=5;setTimeout(ftmuncul,200);
+}
+function mketik5() {if(ae<vketikd.length){kalimatd.innerHTML += vketikd.charAt(ae);ae++;setTimeout(mketik5,35);} if(ae==vketikd.length){tombol()}}
+
+  function dilanjut(){wallpaper.style="transform: scale(1.5);";setTimeout(otomatis2,300);fthilang();ftganti=10;setTimeout(ftmuncul,300);Tombol.style="opacity:0;transform: scale(.1);";jikatom=1;setTimeout(tombol,1000);}
+  
+  function otomatis() {befanimkata();setTimeout(animkata,400);} 
+  function befanimkata(){kalimat.style="transform:scale(.3);";kalimatb.style="transform:scale(.3);";kalimatc.style="transform:scale(.3);";} 
+  function animkata() {kalimat.style="transform:scale(1);";kalimatb.style="transform:scale(1);";kalimatc.style="transform:scale(1);";}
+  
+  function otomatis2() {
+  kalimat.innerHTML = kalimat2.innerHTML;kalimat.style="margin-left:0;margin-right:0";
+  kalimat.style="";kalimata.innerHTML="";
+  kalimatb.innerHTML="";kalimatc.innerHTML="";
+  kalimatd.innerHTML="";
+  }
+
+  function otomatis3() {befanimkata3();setTimeout(animkata3,700);} 
+  function befanimkata3(){kalimat.style="";kalimatb.style="";kalimat.style="opacity:0";kalimatb.style="opacity:0";} 
+  function animkata3() {kalimat.innerHTML = kalimat3.innerHTML + balasan;kalimatb.innerHTML = kalimatb3.innerHTML;kalimat.style="opacity:1;font-size:18px;transition:none";kalimatb.style="opacity:1;font-size:17px;font-weight:400;transition:none";}
+  
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;transition:all .7s ease;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir1.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==3){fotoakhir.src = fotoakhir3.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==4){fotoakhir.src = fotoakhir4.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==5){fotoakhir.src = fotoakhir5.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==6){fotoakhir.src = fotoakhir6.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==10){fotoakhir.src = fotoAkhir.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+  }
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=6283138124986&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
+
+  const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+
+  document.getElementById('suratin').onclick = function(){
+    suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";
+    ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";
+    setTimeout(fmulaikonten,300);setTimeout(mulaikonten,300)
+  }
+  function fmulaikonten(){
+    fungsi=1;suratin.style="display:none";
+    ket.style="display:none";
+    Content.style = "opacity:1;margin-top:4vh;";
+    bodyblur.style="opacity:.3;animation:none";
+    wallpaper.style="transform: scale(1);";
+    bq.style = "position:relative;opacity:1;visibility:visible;margin-top:0;";
+    audio.play();ftganti=0;ftmuncul();
+  }
+  function fthilang(){
+    fotoakhir.style="display:inline-flex;opacity:.5;transition:all .7s ease;transform:scale(.1)";
+  }
+  function jjfoto(){
+    fotoakhir.style.animation="rto .8s infinite alternate";
+  }
+</script>
+<script src="/script.js"></script>
+<!-- Sampai Sini -->
+</body>
+</html>
