@@ -2,7 +2,7 @@
 <html>
 <meta charset='UTF-8'/>
 <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 <meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="/2022-11-14/style.css" rel="stylesheet" type="text/css" />
 
 <head>
@@ -26,6 +26,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+.icon-stt svg{display:none}
+#networkstt.online .icon-stt .connect-icon{display:inline-block}
+#networkstt.offline .icon-stt .disconnect-icon{display:inline-block}
+#networkstt #status-text{font-size:14px;color:#666;padding:6px}
+#networkstt .icon-stt{padding:6px}
+#networkstt{display:none;position:fixed;bottom:15px;left:15px;background:#fff;padding:4px 6px;align-items:center;border-radius:.25rem;box-shadow:0 0 20px rgb(95 125 149 / 25%);z-index:9999}
+#networkstt.offline,#networkstt.online{display:flex}
+.refresh-button{font-size:14px;display:none;color:#7577a9;margin:0 5px 0 10px;cursor:pointer}
+#networkstt.offline .refresh-button{display:inline-block}
+</style>
 <body>
 
 <script language='JavaScript1.2'>
