@@ -27,6 +27,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<script language='JavaScript1.2'>
+     function disableselect(e){
+     return false
+     }
+     function reEnable(){
+     return true
+     }
+    document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+     }
+</script>
+
+<div class='clear'></div>
+<div class='widget HTML' data-version='1' id='HTML2'>
+<div class='widget-content'>
+<script> var message="Dilarang Copy Paste!";
+///////////////////////////////////
+function clickIE4(){if (event.button==2){alert(message);return false;}} function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}} if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;} else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;} document.oncontextmenu=new Function("swals.fire('Ups!' , 'Dilarang copy paste, ya!' , 'warning');return false")</script>
+
+<div class='clear'></div></div></div>
+	
+<script>//<![CDATA[
+     window.addEventListener('load', function() {
+     var status = document.getElementById("status-text"),
+     classnw = document.getElementById("networkstt");
+     function updateOnlineStatus(event) {
+     var networkstt = navigator.onLine ? "Kembali online!" : "Tidak ada koneksi internet!";
+     status.innerHTML = networkstt;
+     if (navigator.onLine == true){classnw.className = 'online';setTimeout(function(){classnw.className = ''},3000)}else{classnw.className = 'offline'}
+     }
+  window.addEventListener('online',  updateOnlineStatus);
+  window.addEventListener('offline', updateOnlineStatus);
+     });
+//]]></script>
 	
    <!-- Ganti Audio di sini --><audio src="https://feeldreams.github.io/akanku/akanku.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
    
@@ -76,7 +113,15 @@
          <b id="tmbl2">💌 Balas</b>
        </a>
      </div>
-     
+    <div id='networkstt'>
+       <div class='icon-stt'>
+       <svg class='connect-icon' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M0 0h24v24H0z' fill='none'></path><path d='M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z' fill='#2ecc71'></path></svg>
+       <svg class='disconnect-icon' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M24 .01c0-.01 0-.01 0 0L0 0v24h24V.01zM0 0h24v24H0V0zm0 0h24v24H0V0z' fill='none'></path><path d='M22.99 9C19.15 5.16 13.8 3.76 8.84 4.78l2.52 2.52c3.47-.17 6.99 1.05 9.63 3.7l2-2zm-4 4c-1.29-1.29-2.84-2.13-4.49-2.56l3.53 3.53.96-.97zM2 3.05L5.07 6.1C3.6 6.82 2.22 7.78 1 9l1.99 2c1.24-1.24 2.67-2.16 4.2-2.77l2.24 2.24C7.81 10.89 6.27 11.73 5 13v.01L6.99 15c1.36-1.36 3.14-2.04 4.92-2.06L18.98 20l1.27-1.26L3.29 1.79 2 3.05zM9 17l3 3 3-3c-1.65-1.66-4.34-1.66-6 0z'></path></svg>
+    </div>
+       <p aria-atomic='true' id='status-text' role='alert'></p>
+       <div class='refresh-button' role='button' tabindex='0'>
+       <span onclick='location.reload()'>Refresh</span>
+     </div>
    </div>
 
 <!-- Jangan Edit Bagian Ini --><script>
