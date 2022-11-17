@@ -60,20 +60,6 @@ function clickIE4(){if (event.button==2){alert(message);return false;}} function
 
 <div class='clear'></div></div></div>
 	
-<script>//<![CDATA[
-     window.addEventListener('load', function() {
-     var status = document.getElementById("status-text"),
-     classnw = document.getElementById("networkstt");
-     function updateOnlineStatus(event) {
-     var networkstt = navigator.onLine ? "Kembali online!" : "Tidak ada koneksi internet!";
-     status.innerHTML = networkstt;
-     if (navigator.onLine == true){classnw.className = 'online';setTimeout(function(){classnw.className = ''},3000)}else{classnw.className = 'offline'}
-     }
-  window.addEventListener('online',  updateOnlineStatus);
-  window.addEventListener('offline', updateOnlineStatus);
-     });
-//]]></script>
-	
    <!-- Ganti Audio di sini --><audio src="https://feeldreams.github.io/akanku/akanku.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
    
    <div id="bodyblur">
